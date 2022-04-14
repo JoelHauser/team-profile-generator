@@ -17,7 +17,7 @@ test ('get name', () => {
 test ('get ID', () => {
     const employee = new Employee('Sammy', 1234, 'Sammy@gmail.com');
 
-    expect(employee.getId).toEqual(expect.any(Number));
+    expect(employee.getId()).toEqual(expect.any(Number));
 });
 
 test ('get email', () => {
@@ -29,5 +29,5 @@ test ('get email', () => {
 test ('get role', () => {
     const employee = new Employee('Sammy', 1234, 'Sammy@gmail.com');
 
-    expect(employee.getRole()).toEqual('Employee');
+    expect(employee.getRole()).toEqual('Manager');
 });
