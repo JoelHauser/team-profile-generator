@@ -151,13 +151,13 @@ const insertEmployee = () => {
       },
       {
         type: "confirm",
-        name: "confirmAddEmployee",
+        name: "confirmInsertEmployee",
         message: "Do you wish to add more members?",
         default: false,
       },
     ])
     .then((employeeData) => {
-      let { name, id, email, role, github, school, confirmAddEmployee } =
+      let { name, id, email, role, github, school, confirmInsertEmployee } =
         employeeData;
       let employee;
 
@@ -170,8 +170,8 @@ const insertEmployee = () => {
       }
       teamArray.push(employee);
 
-      if (confirmAddEmployee) {
-        return addEmployee(teamArray);
+      if (confirmInsertEmployee) {
+        return insertEmployee(teamArray);
       } else {
         return teamArray;
       }
@@ -189,8 +189,8 @@ const writeFile = (data) => {
   });
 };
 
-addManager()
-  .then(addEmployee)
+insertManager()
+  .then(insertEmployee)
   .then((teamArray) => {
     return generateHTML(teamArray);
   })
