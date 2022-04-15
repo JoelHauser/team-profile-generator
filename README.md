@@ -17,8 +17,8 @@
   This project can be used to enter the names of the employees that work for/with you to dynamically generate name, id, email, school, and github! This application is used in the terminal. This program requires the Node Package Manager, Inquirer, and Node.js.
   
   ## Sample screenshot
-  
-  ![App Screenshot]()
+
+  ![App Screenshot](https://github.com/JoelHauser/team-profile-generator/blob/main/Tutorial/Capture.PNG)
 
   ## Installation
   
